@@ -54,7 +54,7 @@ export default function MotiveAchievements() {
                 </div>
             </div>
             <div style={{ height : '50vh'}}></div>
-            <div id='achievementsMain'>
+            {/* <div id='achievementsMain'>
                 <div id='achievementsTitleMain'>
                     Our Achievements
                 </div>
@@ -74,8 +74,8 @@ export default function MotiveAchievements() {
                     })}
                     <div className='achievementsBoxExtraMarginMain'>
                     </div>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
         </div>
     )
 }

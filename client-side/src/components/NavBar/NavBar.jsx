@@ -45,15 +45,15 @@ export default function NavBar() {
                     <button onClick={() => scroll("aboutUsMain")} className='navBar121Main'>
                         About Us
                     </button>
-                    <button onClick={() => scroll("teamsMain")} className='navBar121Main'>
+                    {/* <button onClick={() => scroll("teamsMain")} className='navBar121Main'>
                         Teams
-                    </button>
+                    </button> */}
                     <button onClick={() => scroll("motiveMain")} className='navBar121Main'>
                         Motive
                     </button>
-                    <button onClick={() => scroll("achievementsMain")} className='navBar121Main'>
+                    {/* <button onClick={() => scroll("achievementsMain")} className='navBar121Main'>
                         Achievments
-                    </button>
+                    </button> */}
                     <button onClick={() => scroll("ourEventsMain")} className='navBar121Main'>
                         Events
                     </button>
@@ -88,9 +88,9 @@ export default function NavBar() {
                         </div>
                         <li onClick={() => scroll("welcomeMain")}>Home</li>
                         <li onClick={() => scroll("aboutUsMain")} >About Us</li>
-                        <li onClick={() => scroll("teamsMain")}>Teams</li>
+                        {/* <li onClick={() => scroll("teamsMain")}>Teams</li> */}
                         <li onClick={() => scroll("motiveMain")}>Motive</li>
-                        <li onClick={() => scroll("achievementsMain")}>Achievments</li>
+                        {/* <li onClick={() => scroll("achievementsMain")}>Achievments</li> */}
                         <li onClick={() => scroll("ourEventsMain")}>Events</li>
                         <li onClick={() => navigate("/notice-board")}>Notice Board</li>
                     </ul>

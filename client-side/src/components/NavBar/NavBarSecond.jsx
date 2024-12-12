@@ -1,6 +1,6 @@
 import React, { useState,useContext } from 'react'
 import "./NavBar.css";
-import CodeTogetherSingleLine from "./Assets/Logos/CodeTogetherSingleline.png";
+import CodeTogetherSingleLine from "./Assets/Logos/CodeHubLarge.png";
 import CodeTogetherLogo from "./Assets/Logos/CodeTogetherLogo.png";
 import { useNavigate } from 'react-router-dom';
 import { loginContext } from '../../loginContext';

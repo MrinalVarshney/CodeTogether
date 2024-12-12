@@ -27,9 +27,9 @@ export default function LandingPage() {
             </div>
             {/* ---------------------END---------------------- */}
             {/*  -----------------TEAMS SECTION-------------------  */}
-            <div id='teamsContainer'>
+            {/* <div id='teamsContainer'>
                 <TeamMember />
-            </div>
+            </div> */}
             {/* ---------------------END---------------------- */}
             {/*  -----------------MOTIVEACHIEVEMENTS SECTION-------------------  */}
             <div id='motiveAchievementsContainer'>
