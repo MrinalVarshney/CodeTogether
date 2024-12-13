@@ -104,7 +104,8 @@ export default function LoginPage() {
     if (handleValidation()) {
       try {
         const { password, cfID } = values;
-        const { data } = await axios.post("http://localhost:8000/login", { cfID, password }, { withCredentials: true });
+        console.log( "server path: " + process.env.REACT_APP_SERVER_PATH);
+        const { data } = await axios.post(process.env.REACT_APP_SERVER_PATH + "/login", { cfID, password }, { withCredentials: true });
         if (data.status === false) {
           setMessage(data.msg);
         } else if (data.status === true) {

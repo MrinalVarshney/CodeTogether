@@ -42,13 +42,13 @@ export default function Education() {
         try {
             console.log("user");
             const user = await JSON.parse(localStorage.getItem(process.env.CODETOGETHER_APP_LOCALHOST_KEY));
-            const EducationAPIresponse = await axios.post('http://localhost:8000' + '/education', { cfID: user.cfID }, { withCredentials: true });
+            const EducationAPIresponse = await axios.post(process.env.REACT_APP_SERVER_PATH + '/education', { cfID: user.cfID }, { withCredentials: true });
             const EducationInfo = EducationAPIresponse.data.data;
             const EducationComponent = EducationInfo.map((category, index) => <EduSection key={index} title={category.title} _id={category._id} redirectToVideos={redirectToVideos}/>)
 
             setPageHtml(<>
                 <div className="background-pink-blue">
-                    <div id='navBarLandingPageContainer'>
+                    <div id='navBarLandingPageContainer'>   
                         <NavBarSecond />
                     </div>
                     <NavSpace />

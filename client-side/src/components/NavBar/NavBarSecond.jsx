@@ -7,7 +7,6 @@ import { loginContext } from '../../loginContext';
 
 
 export default function NavBarSecond() {
-
     const navigate = useNavigate();
 
       //USER-LOGIN INFO
