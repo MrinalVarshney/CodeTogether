@@ -36,7 +36,7 @@ export default function NavBar() {
             {/* --------------HTML FOR DESKTOP EXPERIENCE---------------- */}
             <div id='navBar1Main'>
                 <div id='navBar11Main'>
-                    <img onClick={() => navigate("/")} src={CodeHubSingleLine} alt="Code Together" />
+                    <img onClick={() => navigate(process.env.REACT_APP_BASE_URL + "/")} src={CodeHubSingleLine} alt="Code Together" />
                 </div>
                 <div id='navBar12Main'>
                     <button onClick={() => scroll("welcomeMain")} className='navBar121Main'>
@@ -57,10 +57,10 @@ export default function NavBar() {
                     <button onClick={() => scroll("ourEventsMain")} className='navBar121Main'>
                         Events
                     </button>
-                    <button onClick={() => navigate("/notice-board")} className='navBar121Main'>
+                    <button onClick={() => navigate(process.env.REACT_APP_BASE_URL + "/notice-board")} className='navBar121Main'>
                         Notice Board
                     </button>
-                    <button onClick={() => navigate("/login")} id='navBar122Main'>
+                    <button onClick={() => navigate(process.env.REACT_APP_BASE_URL + "/login")} id='navBar122Main'>
                     {login ? "Logout" : "Login"} 
                     </button>
                 </div>
@@ -70,7 +70,7 @@ export default function NavBar() {
             {/* -----------------HTML FOR MOBILE/TABLET EXPERIENCE--------------- */}
             <div id='navBar2Main'>
                 <div>
-                    <button onClick={() => navigate("/login")} id='navBar21Main'>
+                    <button onClick={() => navigate(process.env.REACT_APP_BASE_URL + "/login")} id='navBar21Main'>
                     {login ? "Logout" : "Login"} 
                     </button>
                 </div>
@@ -92,7 +92,7 @@ export default function NavBar() {
                         <li onClick={() => scroll("motiveMain")}>Motive</li>
                         {/* <li onClick={() => scroll("achievementsMain")}>Achievments</li> */}
                         <li onClick={() => scroll("ourEventsMain")}>Events</li>
-                        <li onClick={() => navigate("/notice-board")}>Notice Board</li>
+                        <li onClick={() => navigate(process.env.REACT_APP_BASE_URL + "/notice-board")}>Notice Board</li>
                     </ul>
                 </div>
             </div >
