@@ -17,7 +17,7 @@ app.use(session({
   saveUninitialized: true
 }));
 app.use(function (req, res, next) {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.header('Access-Control-Allow-Origin', process.env.REACT_APP_SERVER_PATH);
     res.header('Access-Control-Allow-Credentials', true);
     res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
     res.setHeader("Access-Control-Expose-Headers", "Content-Disposition");
