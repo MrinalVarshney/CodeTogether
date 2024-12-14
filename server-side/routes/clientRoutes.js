@@ -1,10 +1,10 @@
 const { educationCategories, videos, leaderboard, contactUs, noticeboard, login, register } = require("../controllers/clientControllers");
 const router = require("express").Router();
-router.post("/education", educationCategories);
-router.post("/education/videos", videos);
-router.post("/leaderboard", leaderboard);
-router.post("/login", login);
-router.post("/register", register);
-router.post("/contactus", contactUs);
-router.get("/noticeboard", noticeboard);
+router.post(process.env.REACT_APP_BASE_URL + "/education", educationCategories);
+router.post(process.env.REACT_APP_BASE_URL + "/education/videos", videos);
+router.post(process.env.REACT_APP_BASE_URL + "/leaderboard", leaderboard);
+router.post(process.env.REACT_APP_BASE_URL + "/login", login);
+router.post(process.env.REACT_APP_BASE_URL + "/register", register);
+router.post(process.env.REACT_APP_BASE_URL + "/contactus", contactUs);
+router.get(process.env.REACT_APP_BASE_URL + "/noticeboard", noticeboard);
 module.exports = router;
