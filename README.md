@@ -1,12 +1,15 @@
-# CodeTogether
+# CodeHub
 
-CodeTogether is the official competitive programming club of Narula Institute of Technology. This repository contains the code used for its official website.
+CodeHub is the official website of Computer Coding Club, MNNIT. This repository contains the code used for its official website.
 
-![CodeTogether Logo](/CodeTogether_logo_large.png) 
+[Link to college's website](https://mnnit.ac.in/)
+
+
+![CodeTogether Logo](/codeHub.png) 
 
 ## Overview
 
-The project consists of both client-side and server-side code. The client-side and server-side are almost complete, while the work on the admin-side is currently on hold. The website is currently hosted on [abc.com](https://www.abc.com) with dummy data for showcasing purposes.
+The project consists of both client-side and server-side code. The client-side and server-side are complete, while the work on the admin-side is currently on hold as the college has asked to do.
 
 ## How to Run
 
@@ -41,8 +44,10 @@ The CodeTogether website was built with love by:
 - [Aishwarya Vikram Singh](https://github.com/Aishwaryavikramsingh)
 - [Akhil Gupta](https://github.com/akhil1g)
 - [Kavya Aggrawal](https://github.com/kagarwal1811)
+- [Khanak Pattwari](https://github.com/Khanak21)
+- [Mrinal Varshney](https://github.com/MrinalVarshney)
 
 ## Contact
 
-For any inquiries or feedback, please feel free to reach out to us via aditya70544@gmail.com.
+For any inquiries or feedback, please feel free to reach out to us via aditya70544@icloud.com.
 

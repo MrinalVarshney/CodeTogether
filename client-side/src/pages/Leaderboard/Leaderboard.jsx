@@ -94,7 +94,7 @@ export default function Leaderboard() {
         try {
 
             const user = await JSON.parse(localStorage.getItem(process.env.CODETOGETHER_APP_LOCALHOST_KEY));
-            const LeaderboardAPIresponse = await axios.post('http://localhost:8000' + '/leaderboard', { cfID: user.cfID }, { withCredentials: true });
+            const LeaderboardAPIresponse = await axios.post(process.env.SERVER_PATH + '/leaderboard', { cfID: user.cfID }, { withCredentials: true });
             const userBoardInfo = LeaderboardAPIresponse.data.data;
             console.log(userBoardInfo)
             await SortUsersByRating(userBoardInfo)

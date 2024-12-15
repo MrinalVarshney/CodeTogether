@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import Welcome from './Welcome/Welcome'
 import "./LandingPage.css"
-import Teams from './Teams/Teams'
+import TeamMember from '../Team/TeamMember'
 import MotiveAchievements from './MotiveAchievements/MotiveAchievements'
 import OurEvents from './OurEvents/OurEvents'
 import QuickLinkAboutUs from './QuickLinksAboutUs/QuickLinkAboutUs'
@@ -27,9 +27,9 @@ export default function LandingPage() {
             </div>
             {/* ---------------------END---------------------- */}
             {/*  -----------------TEAMS SECTION-------------------  */}
-            <div id='teamsContainer'>
-                <Teams />
-            </div>
+            {/* <div id='teamsContainer'>
+                <TeamMember />
+            </div> */}
             {/* ---------------------END---------------------- */}
             {/*  -----------------MOTIVEACHIEVEMENTS SECTION-------------------  */}
             <div id='motiveAchievementsContainer'>
