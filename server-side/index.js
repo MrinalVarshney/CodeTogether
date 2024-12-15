@@ -23,6 +23,9 @@ app.use(function (req, res, next) {
     res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
     res.setHeader("Access-Control-Expose-Headers", "Content-Disposition");
     res.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Authorization, authorization, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
+    if (req.method === 'OPTIONS') {
+        return res.status(200).end();  // Respond with 200 OK for preflight
+    }
     next();
 });
 
