@@ -17,13 +17,14 @@ app.use(session({
   saveUninitialized: true
 }));
 app.use(function (req, res, next) {
-    res.header('Access-Control-Allow-Origin', process.env.CLIENT_PATH);
-    res.header('Access-Control-Allow-Credentials', true);
+    const origin = req.headers.origin;
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Access-Control-Allow-Credentials', true);
     res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
     res.setHeader("Access-Control-Expose-Headers", "Content-Disposition");
     res.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Authorization, authorization, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
     next();
-  });
+});
 
 mongoose.set('strictQuery', false);
 mongoose
