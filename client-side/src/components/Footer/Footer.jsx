@@ -30,10 +30,10 @@ export default function Footer() {
     <span>&#169; {year} CodeHub. All Rights Reserved.</span>
   </div>
   <div className="LinkContainer">
-    <a href="#" className="FooterLink">About</a>
+    {/* <a href="#" className="FooterLink">About</a>
     <a href="#" className="FooterLink">Privacy Policy</a>
     <a href="#" className="FooterLink">Licensing</a>
-    <a href="#" className="FooterLink">Contact</a>
+    <a href="#" className="FooterLink">Contact</a> */}
   </div>
 </footer>
 

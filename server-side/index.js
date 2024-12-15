@@ -17,7 +17,7 @@ app.use(session({
   saveUninitialized: true
 }));
 app.use(function (req, res, next) {
-    res.header('Access-Control-Allow-Origin', process.env.REACT_APP_SERVER_PATH);
+    res.header('Access-Control-Allow-Origin', process.env.CLIENT_PATH);
     res.header('Access-Control-Allow-Credentials', true);
     res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
     res.setHeader("Access-Control-Expose-Headers", "Content-Disposition");
@@ -39,7 +39,7 @@ mongoose
     });
 
 app.use("/admin", adminRoutes);
-app.use("/", clientRoutes);
+app.use(process.env.REACT_APP_BASE_URL + "/", clientRoutes);
 
 const server = app.listen(process.env.PORT, () =>
     console.log(`Server started on port ${process.env.PORT}`)
